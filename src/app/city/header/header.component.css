@@ -1,0 +1,40 @@
+header {
+    background: #014667;
+    color: #fff;
+  }
+  header .row {
+    margin: 0px;
+  }
+  header div .h-logo h3 {
+    padding: 6px;
+    border-right: 1px solid #fff;
+    margin-top: 7px;
+  }
+  header div select {
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 0px !important;
+  }
+  header div .p-t-10 {
+    padding-top: 18px;
+  }
+  header div .h-right {
+    float: right;
+    margin-right: 10px;
+    padding-top: 18px;
+    padding-right: 14px;
+  }
+  header div .h-right p {
+    float: left;
+  }
+  header div .h-right .col-icons {
+    float: left;
+  }
+  header div .h-right .col-icons ul {
+    list-style: none;
+  }
+  header div .h-right .col-icons ul li {
+    float: left;
+    padding: 0px 5px;
+  }
+  

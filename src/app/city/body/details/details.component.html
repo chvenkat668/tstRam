@@ -1,0 +1,66 @@
+<div id="app-details-view">
+  <div class="app-custom-dropdown">
+        <ul>
+          <li>
+         <div ngbDropdown class="d-inline-block">
+          <button id="dropdownBasic1" ngbDropdownToggle>Managed Segments</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" (click)="$event.stopPropagation()">
+            <div class="ngx-tree">
+                <div class="ngx-tree-left">
+                    <ngx-treeview [items]="items" [itemTemplate]="itemTemplate" 
+                    (selectedChange)="onSelectedChange($event)">
+                      </ngx-treeview>
+                </div>
+                <div class="ngx-tree-right">
+                    <p>Selections</p>
+                    <ul>
+                      <li *ngFor="let i of row">{{i.text}}</li>
+                    </ul>
+                </div>
+              </div> 
+          </div>
+        </div>    
+        </li>
+        <li>
+          <div ngbDropdown class="d-inline-block">
+            <button id="dropdownBasic2" ngbDropdownToggle>Total City</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2" (click)="$event.stopPropagation()">
+              <div class="ngx-tree">
+                  <div class="ngx-tree-left">
+                      <ngx-treeview [items]="items" [itemTemplate]="itemTemplate" 
+                      (selectedChange)="onSelectedChange($event)">
+                        </ngx-treeview>
+                  </div>
+                  <div class="ngx-tree-right">
+                      <p>Selections</p>
+                      <ul>
+                        <li *ngFor="let i of row">{{i.text}}</li>
+                      </ul>
+                  </div>
+                </div> 
+            </div>
+          </div>    
+        </li>
+      </ul>
+
+  </div>
+<ngb-tabset>
+    <ngb-tab title="BUILDING">
+      <ng-template ngbTabContent>
+       <app-summary-view class="mar-b-20"></app-summary-view>
+       <app-details-view class="mar-b-20"></app-details-view>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="PEOPLE">
+      <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+        <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+        craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+        cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+        yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+        shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+        sint qui sapiente accusamus tattooed echo park.</p>
+      </ng-template>
+      {{items | json}}
+    </ngb-tab>      
+  </ngb-tabset>
+</div>

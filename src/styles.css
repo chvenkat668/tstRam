@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .tab-content {
+    background: #fff;
+    padding: 10px;
+    height: 85vh;
+    overflow-y: auto;
+  }
+  .panel {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 7px #ccc;
+    width: calc(100% - 20px);
+    margin: 5px auto;
+  }
+  .panel .panel-header {
+    background: #006da0;
+    color: #fff;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .panel .panel-header .no-mar p {
+    padding-top: 3px;
+    font-size: 19px;
+    margin: 0px;
+    padding-left: 11px;
+  }
+  .panel .panel-header .tags {
+    background: #ccc;
+    color: #000;
+    padding: 5px 10px;
+    float: right;
+    font-size: 14px;
+    margin: 4px;
+    border-radius: 5px;
+  }
+  .panel .panel-header ul {
+    list-style: none;
+    float: right;
+    margin-bottom: 0px;
+  }
+  .panel .panel-header ul li {
+    float: left;
+    margin: 5px;
+  }
+  .panel .panel-body {
+    padding: 10px;
+  }
+  /* details tab */
+  #app-details .nav-tabs {
+    position: absolute;
+    left: -180px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 270px;
+    background: #fff;
+    border: none;
+  }
+  #app-details .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 11px 16px;
+    color: #000;
+    border: 1px solid #ccc;
+    margin: 2px 2px 0px 0px;
+    border-bottom: 0px;
+  }
+  #app-details .nav-tabs .nav-link.active {
+    background: #006ea0;
+    color: #fff;
+  }
+  #app-details .tab-content {
+    padding: 0px 10px;
+  }
+  #app-details #app-details-view .nav-tabs {
+    position: relative;
+    left: 0px;
+    transform: rotate(0deg);
+    top: 0px;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  #app-details #app-details-view .nav-tabs .nav-link.active {
+    background: #696969;
+    color: #fff;
+  }
+  

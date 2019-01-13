@@ -1,0 +1,5 @@
+.appbody{
+    padding: 15px;
+    width:calc(100% - 50px);
+    float:right;
+}

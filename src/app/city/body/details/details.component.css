@@ -1,0 +1,51 @@
+.ngx-tree {
+    width: 400px;
+  }
+  .ngx-tree .ngx-tree-left {
+    width: 60%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    float: left;
+  }
+  .ngx-tree .ngx-tree-right {
+    width: 40%;
+    float: left;
+  }
+  .ngx-tree .ngx-tree-right p {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+  }
+  .ngx-tree .ngx-tree-right ul {
+    list-style: disc;
+  }
+  .ngx-tree .ngx-tree-right ul li {
+    float: none;
+  }
+  .dropdown-menu {
+    padding: 0px;
+  }
+  #app-details-view {
+    position: relative;
+  }
+  .app-custom-dropdown {
+    float: left;
+    position: absolute;
+    top: 2px;
+    z-index: 9;
+    left: 168px;
+  }
+  .app-custom-dropdown ul {
+    list-style: none;
+  }
+  .app-custom-dropdown ul li {
+    float: left;
+  }
+  .app-custom-dropdown ul li .d-inline-block button {
+    background: transparent;
+    padding: 10px;
+    margin-right: 5px;
+    border-bottom: 0px;
+  }
+  

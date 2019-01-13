@@ -1,0 +1,16 @@
+.some-class div {
+    height: 100vh;
+    border: 1px solid red;
+  }
+  footer {
+    background: black;
+    color: #fff;
+  }
+  .page-scroll-footer {
+    position: fixed;
+    bottom: 0px;
+  }
+  #welcome0 {
+    width: auto;
+  }
+  
